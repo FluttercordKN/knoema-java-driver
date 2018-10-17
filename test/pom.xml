@@ -1,13 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>knoema-java-driver</artifactId>
-        <groupId>com.knoema</groupId>
-        <version>1.0</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.knoema</groupId>
     <artifactId>knoema-java-driver-test</artifactId>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
 
     <name>knoema-java-driver-test</name>
@@ -16,7 +13,32 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- necessary for intellij to function -->
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Bill Sytin</name>
+            <email>bsytin@knoema.com</email>
+            <organization>Knoema</organization>
+            <organizationUrl>https://www.knoema.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/Knoema/knoema-java-driver.git</connection>
+        <developerConnection>scm:git:ssh://github.com:Knoema/knoema-java-driver.git</developerConnection>
+        <url>http://github.com/Knoema/knoema-java-driver/tree/master</url>
+    </scm>
 
     <dependencies>
         <dependency>
@@ -28,7 +50,7 @@
         <dependency>
             <groupId>com.knoema</groupId>
             <artifactId>knoema-java-driver</artifactId>
-            <version>1.0</version>
+            <version>1.0.2</version>
         </dependency>
     </dependencies>
 </project>

@@ -9,8 +9,8 @@ import com.knoema.search.SearchScope;
 import com.knoema.series.TimeSeriesFrame;
 import com.knoema.series.TimeSeriesId;
 import com.knoema.series.TimeSeriesValues;
-import junit.framework.Assert;
 import org.apache.http.concurrent.FutureCallback;
+import org.junit.Assert;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -254,9 +254,10 @@ public class Tester {
                 if (data.data != null && data.data.size() > 0) {
                     dataItem = data.data.get(0);
                     if (dataItem.values.size() > 0) {
-                        DataItemValue itemValue = dataItem.values.get(0);
-                        if (itemValue instanceof DataItemTime)
-                            return ((DataItemTime) itemValue).frequency;
+                        for (DataItemValue itemValue : dataItem.values) {
+                            if (itemValue instanceof DataItemTime)
+                                return ((DataItemTime) itemValue).frequency;
+                        }
                     }
                 }
             }

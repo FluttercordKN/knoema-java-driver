@@ -2,10 +2,10 @@ package com.knoema;
 
 import com.knoema.core.Utils;
 import com.knoema.search.SearchScope;
-import junit.framework.Assert;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import org.junit.Assert;
 
 import java.io.IOException;
 import java.util.Calendar;

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/knoema-java-driver.iml" filepath="$PROJECT_DIR$/knoema-java-driver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/knoema-java-driver-test.iml" filepath="$PROJECT_DIR$/knoema-java-driver-test.iml" />
     </modules>
   </component>
 </project>
