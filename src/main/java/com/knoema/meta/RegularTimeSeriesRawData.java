@@ -15,6 +15,7 @@ public class RegularTimeSeriesRawData extends TimeSeriesRawData {
     public float scale;
     public String mnemonics;
     public Double[] values;
+    public Integer tsKey;
 
     public RegularTimeSeriesRawData() {
         super();

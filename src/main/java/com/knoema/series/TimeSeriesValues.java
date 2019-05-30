@@ -13,6 +13,7 @@ public class TimeSeriesValues extends TimeSeriesId {
     public final Float scale;
     public final String mnemonics;
     public final Series series;
+    public final Integer tsKey;
 
     public TimeSeriesValues(RegularTimeSeriesRawData item, Frequency frequency, AttributesMap<Integer> keys, AttributesMap<Object> attributes, Series series) {
 
@@ -24,5 +25,6 @@ public class TimeSeriesValues extends TimeSeriesId {
         this.scale = item.scale;
         this.mnemonics = item.mnemonics;
         this.series = series;
+        this.tsKey = item.tsKey;
     }
 }
