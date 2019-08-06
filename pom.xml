@@ -4,7 +4,7 @@
 
     <groupId>com.knoema</groupId>
     <artifactId>knoema-java-driver</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <packaging>jar</packaging>
 
     <name>knoema-java-driver</name>
@@ -111,7 +111,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.9.9</version>
+            <version>2.9.9.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
