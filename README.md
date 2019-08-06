@@ -10,7 +10,7 @@ To add reference to this Knoema package from your Maven project please use follo
         <dependency>
             <groupId>com.knoema</groupId>
             <artifactId>knoema-java-driver</artifactId>
-            <version>1.0.4</version>
+            <version>1.0.6</version>
         </dependency>
     
 # Retrieving series from datasets
